@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     
-    <link rel="icon" type="image/png" href="https://bbinl.github.io/cc-gen/favicon.png" />
     <style>
       /* --- Root Variables - Exact Match from New Image --- */
       :root {
@@ -69,6 +68,24 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+      }
+
+      /* --- Page Header --- */
+      .page-header {
+        text-align: center;
+        padding-bottom: 1rem; 
+      }
+
+      .page-header h1 {
+        margin: 0;
+        font-size: 1.75rem;
+        font-weight: 700;
+        background: linear-gradient(45deg, var(--accent-primary), #89d8ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+        display: inline-block;
       }
 
       /* --- Card Styles --- */
@@ -216,6 +233,10 @@
   <body>
     <div class="main-wrapper">
 
+      <header class="page-header">
+        <h1>Robiul Cheker 2</h1>
+      </header>
+
       <main class="container">
         <section class="card">
           <div class="input-group">
@@ -255,7 +276,7 @@
       </main>
 
       <footer class="main-footer">
-          <p>Design inspired by professional developer tools.</p>
+          <p>dev by robiul</p>
       </footer>
     </div>
 
@@ -369,6 +390,8 @@
         return numbersTextarea.value.trim().split("\n").filter(line => line.trim() !== "");
       }
 
+
+
       function toggleButtons(isChecking) {
         checkBtn.disabled = isChecking;
         stopCheckBtn.disabled = !isChecking;
@@ -413,4 +436,5 @@
     </script>
   </body>
 </html>
+
 
